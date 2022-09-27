@@ -14,6 +14,15 @@
     box-shadow: 0 1rem 3rem rgba($color-black, 0.2);
     text-align: center;
     cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
   &__background {
     height: 6rem;
@@ -29,7 +38,14 @@
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1);
 
-    // transform: scale(80);
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+    @include respond(phone) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
   &__nav {
     height: 100vh;
